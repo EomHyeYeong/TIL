@@ -1,0 +1,30 @@
+body{
+    font-family: 'Roboto Mono', monospace;
+    
+    display: flex;              /*이 속성 없으면 가운데정렬 x*/
+    align-items: center;
+    justify-content: center;    /*가로방향 가운데정렬*/
+    height: 100vh;              /*세로방향 가운데정렬*/
+
+    background-color: #151b29;
+}
+
+button{
+    background: none;       /*버튼의 기본 스타일 없애기*/
+    color: #ffa260;
+    border: 2px solid;
+    padding: 1em 2em;       /*가로: 현재 글꼴의 1배, 세로: 현재 글꼴의 2배로 설정*/
+    font-size: 1em;         /*본문 크기나 부모 요소에 따라 글꼴 크기가 조절됨*/
+
+    transition: color 0.2s, border-color 0.2s, box-shadow 0.2s, transform 0.2s;
+    /*transition을 적용시킬 각각 속성마다 설정을 해주는 것이 좋다.*/
+}
+
+button:hover {
+    border-color: #f1ff5c;
+    color: white;
+    box-shadow: 0 0.5em 0.5em -0.4em #f1ff5c; /*x, y, 번짐, 범위, 색상*/
+
+    transform: translateY(-0.25em);
+    cursor: pointer;                            /*커서의 모양 변형*/
+}
