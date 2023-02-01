@@ -1,0 +1,40 @@
+section:nth-of-type(1){
+    width: 80%;
+    height: 500px;
+    background-image: url(https://sgallery.skku.edu/_attach/image/2018/11/iLVIZHPPtrauPqIjjbuN.jpg);
+    /*배경화면을 이미지로*/
+    background-size: cover;
+    /*background-size 👉 이미지의 크기 변경*/
+    /*
+    contain: 이미지의 비율을 유지하면서 잘림 없이 최대한 꽉 차게 표시됨. 사진보다 화면의 크기가 더 큰 경우 이미지가 반복되어 나타날 수 있다.
+    cover: 비율을 유지하며 꽉차게 나타나지만 잘림이 있다.(반복은 발생하지 않는다.)
+    반복을 조정하는 속성도 있다.
+    */
+
+    background-position: bottom;
+    /*background-position 👉 사진의 기준 위치를 지정*/
+    /*
+    만약 속성값이 top이면 사진의 윗부분을 기준으로 보여준다.
+    속성값이 bottom이면 사진의 아랫부분을 기준으로 보여준다.
+    */
+    margin: 0 auto;
+
+    /* 속기법
+    : background 관련 속성을 하나로 처리할 수 있다.
+    ex. background: center/cover url(https://sgallery.skku.edu/_attach/image/2018/11/iLVIZHPPtrauPqIjjbuN.jpg);
+    */
+}
+
+h1{
+    font-size: 50px;
+    color: white;
+}
+
+section:nth-of-type(2){
+    width: 80%;
+    height: 500px;
+    margin: 0 auto;
+
+    background: center/50% no-repeat url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRFc1EMG1wNI3bXMrsHnm8QVPrhXwwYTkRQQ&usqp=CAU) #fefae0;
+    /*다중 배경으로 색상이나 다른 이미지를 적용할 수 있다.*/
+}
